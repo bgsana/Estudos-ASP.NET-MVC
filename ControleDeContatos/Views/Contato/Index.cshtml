@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+
+<div class="text-center">
+
+    <h1 class="display-5">Listagem de Contatos</h1>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-info" role="button"  asp-controller="Contato" asp-action="Criar">Adicionar novo contato</a>
+    </div>
+    <br />
+    <table class="table table-info table-hover table-striped table-bordered border-primary">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Celular</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>otto@gmail.com</td>
+                <td>99222-1111</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opções
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary" asp-controller="Contato" asp-action="Editar">Editar</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Apagar</a></li>
+                        </ul>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>thornton@gmail.com</td>
+                <td>99222-1111</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opções
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary" asp-controller="Contato" asp-action="Editar">Editar</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Apagar</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>John</td>
+                <td>doe@gmail.com</td>
+                <td>99222-1111</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opções
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary" asp-controller="Contato" asp-action="Editar">Editar</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Apagar</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
